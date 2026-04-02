@@ -183,7 +183,6 @@ module "r2_assets" {
 
 <!-- END_TF_DOCS -->
 
-
 <!-- references -->
 
 [repo_link]: https://github.com/Infrastrukturait/terraform-cloudflare-r2-bucket
