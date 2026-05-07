@@ -72,4 +72,10 @@ resource "cloudflare_r2_bucket_event_notification" "this" {
   bucket_name = local.bucket_name
   queue_id    = each.value.queue_id
   rules       = each.value.rules
+
+  lifecycle {
+    ignore_changes = [
+      queue_name,
+    ]
+  }
 }
